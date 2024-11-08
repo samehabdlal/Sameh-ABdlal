@@ -1,0 +1,235 @@
+.cover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: inherit;
+  z-index: -1000 !important;
+}
+
+.content {
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.518), rgba(0, 0, 0, 0.798));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.description {
+  padding-top: 15%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .name {
+    font-size: 80px;
+    width: auto;
+    color: transparent;
+    background-image: url('/egypt.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(2px 1px 2px white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 800;
+    font-family: Oswald, Helvetica, sans-serif;
+  }
+
+  .jop {
+    color: #fff;
+    filter: drop-shadow(2px 3px 2px rgb(138, 30, 6));
+    font-size: 21px;
+    font-weight: 300;
+
+    font-weight: 800;
+    margin: 5px 0;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .abda {
+    font-family: Oswald, Helvetica, sans-serif;
+    line-height: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+  }
+
+  .desc {
+    color: whitesmoke;
+    font-size: larger;
+    text-align: center;
+  }
+}
+
+@media(max-width:789px) {
+  .description {
+    padding-top: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .name {
+      font-size: 40px;
+    }
+
+    .abda {
+      font-size: 20px;
+    }
+
+    .desc {
+      font-size: medium;
+    }
+  }
+}
+
+/* From Uiverse.io by elijahgummer */
+ul {
+  position: fixed;
+  top: 500px;
+  right: 20px;
+  display: flex;
+  gap: 25px;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+ul li:hover {
+  width: 180px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 60px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  opacity: 0;
+  transition: 0.5s;
+}
+
+ul li:hover::before {
+  opacity: 1;
+}
+
+ul li::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  transition: 0.5s;
+  filter: blur(15px);
+  z-index: -1;
+  opacity: 0;
+}
+
+ul li:hover::after {
+  opacity: 0.5;
+}
+
+ul li .icon {
+  color: #777;
+  font-size: 1.75em;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+
+ul li:hover .icon {
+  transform: scale(0);
+  color: #fff;
+  transition-delay: 0s;
+}
+
+ul li span {
+  position: absolute;
+}
+
+ul li .title {
+  color: #fff;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transform: scale(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+ul li:hover .title {
+  transform: scale(1);
+  transition-delay: 0.25s;
+}
+.closecard{
+  position: absolute;
+  top: 25%;
+  transition: 1s;
+  left: -3000px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  max-width: 600px;
+  background-color: black;
+  box-shadow: 0 4px 8px black;}
+.card {
+  position: absolute;
+  top: 25%;
+  transition: 1s;
+  left: 30%;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  max-width: 600px;
+  background-color: black;
+  box-shadow: 0 4px 8px black;
+.focus{
+  color: rgb(158, 23, 23);
+  border-bottom: 1px solid white;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+  #greeting{
+    color: #fff;
+    font-weight: 400;
+    font-style: italic;
+  }
+  #message{
+     color: #ccc;
+  }
+}
+@media(max-width:789px){
+  .card {
+  left: 20%;
+  right: 10px;
+  } 
+}
+.prtfilo{
+  width: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  border: 2px solid white;
+  right: -7px;
+}

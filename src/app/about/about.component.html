@@ -1,0 +1,62 @@
+<div class="back">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- titel -->
+                <div class="titel">
+                    <h3 class="section-title">About_Me</h3>
+                    <span class="cretef">Solution Architect, Software Engineer, Mentor</span>
+                </div>
+                <!-- yiurme -->
+                <div class="youme">
+                    <h4 class="content">I am Solution Architect / junio Software Engineer / Mentor  /
+                        Content Creator</h4>
+                    <p class="welcome">Welcome! I'm <span class="focus">Sameh_Abdlal</span>, an expert frontend angular
+                        Developer and Solution Architect in delivering top-notch digital solutions. If you’re looking
+                        for high-quality work at competitive prices and with rapid turnaround times, you've come to the
+                        right place.</p>
+                </div>
+                <!-- serice -->
+                <div class="service">
+                    <h5 class="block_titel">Service</h5>
+                    <div class="row">
+                        <div class="col-md-4" *ngFor="let serve of service">
+                            <div class="card">
+                                <img class="img-service" [src]="serve.img" alt="">
+                                <h2 class="titel-service">{{serve.titel}}</h2>
+                                <p class="desc-service">{{serve.desc}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why Me? -->
+                <div class="service">
+                    <h5 class="block_titel">Why Me?</h5>
+                    <div class="row">
+                        <div class="col-md-4 gap-2" *ngFor="let why of why_me">
+                            <div class="card">
+                                <img class="img-service" [src]="why.img" alt="">
+                                <h2 class="titel-service">{{why.titel}}</h2>
+                                <p class="desc-service">{{why.desc}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- serice -->
+                <div class="service">
+                    <h5 class="block_titel">Fun Facts </h5>
+                    <div class="row">
+                        <div class="col-md-4" *ngFor="let fact of fact_me">
+                            <div class="card">
+                                <i class="icon" [class]="fact.i"></i>
+                                <h2 class="titel-service">{{fact.titel}}</h2>
+                                <p class="desc-service">{{fact.desc}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<header class="navbar" >
+    <div class="closes ">
+        <div class="usernames">
+            <h2 class="name">S_A</h2>
+        </div>
+            <!--toggle closes  -->
+            <div class="toggle">
+                <button (click)="close()" type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+                    <i class="fa-solid fa-bars navicon"></i>
+                  </button>
+            <!-- end toggle closes  -->
+        </div>
+    </div>
+</header>
+<header [ngClass]="closedash===true?'dashboard' :'closedDashboard'">
+    <div class="content">
+        <img class="imgprofile" sizes="200px" src="/photo_2024-10-14_00-51-21.jpg" alt="samaeh_abdlal">
+        <h4 class="username">Sameh_Abdlal <img class="tosek" src="/64eae7f339b0a.png" alt="true"> </h4>
+        <p class="description">Software Engineer</p>
+    </div>
+    <div class="content">
+        <div class="links">
+            <a class="link"  (click)="close()"  routerLink="/home" routerLinkActive="active">Home </a>
+            <a class="link"  (click)="close()"routerLink="/about" routerLinkActive="active">About_Me</a>
+            <a class="link"  (click)="close()" routerLink="/resume" routerLinkActive="active">Resume</a>
+            <a class="link"  (click)="close()" routerLink="/Portfolio" routerLinkActive="active">Portfolio</a>
+            <a class="link"  (click)="close()" routerLink="/contact" routerLinkActive="active">contact</a>
+        </div>
+        <div class="coshil">
+            <a class="conten" target="_blank"
+                href="https://www.facebook.com/profile.php?id=100039906942127&mibextid=LQQJ4d"> <i
+                    class="fa-brands fa-facebook"></i> </a>
+            <a class="conten" target="_blank" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a class="conten" target="_blank" href="https://www.linkedin.com/in/sameh-abdlal-25509628b/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a class="conten" target="_blank" href="https://github.com/samehabdlal"><i
+                    class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+</header>

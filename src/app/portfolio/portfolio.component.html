@@ -1,0 +1,32 @@
+<div class="back">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- titel -->
+                <div class="titel">
+                    <h3 class="section-title">Portfolio</h3>
+                    <span class="cretef">My Best Works</span>
+                </div>
+                <!-- serice -->
+                <div class="service">
+                    <div class="row">
+                        <div class="col-md-4" *ngFor="let project of projects">
+
+                            <div class="card">
+                                <div class="link-hover">
+                                    <a class="share"  target="_blank" [href]="project.git"  >link</a>
+                                </div>
+                                <img
+                                 loading="lazy"
+                                sizes="(max-width: 600px) 480px, 800px"
+                                class="img-service" [src]="project.link" [alt]="project.alt">
+                                <h2 class="titel-service">{{project.name}}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

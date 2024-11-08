@@ -1,0 +1,139 @@
+.dashboard {
+    width: 25%;
+    z-index: 999;
+    height: calc(100vh - 50px);
+    background-color: black !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: auto; /* This adds a scroll bar */
+}
+// close dash board and style 
+.closedDashboard {
+    width: 25%;
+    height: calc(100vh - 50px);
+    background-color: black;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    overflow: hidden;
+    transition:5s; 
+    left: -5000px;
+}
+.dashboard::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.dashboard::-webkit-scrollbar-track {
+    background:  black; 
+}
+
+.dashboard::-webkit-scrollbar-thumb {
+    background-color:  black; 
+    border-radius: 6px; 
+    border-right: 1px solid  #f9966f; 
+}
+
+.dashboard::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}
+@media(max-width:789px){
+    .dashboard {
+        width: 50%;
+    } 
+}
+
+
+.navbar {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    height: auto;
+    z-index: 999;
+}
+.imgprofile{
+    width: 120px;
+    height: auto;
+    margin: auto;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 2px   #f9966f);
+    gap: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.username{
+    color: white;
+    margin-top: 20px;
+}
+.tosek{
+    width: 30px;
+}
+.description{
+    color: aliceblue;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    gap: 20px !important;
+    width: 100%;
+}
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    width: 100%  ;
+    color:  white;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+.link:hover{
+    border-right: 6px solid   #f9966f;
+    color: white;
+}
+.coshil{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+.conten{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.conten:hover{
+    color:  #f9966f ;
+}
+  
+   .closes{
+    display: flex !important;
+    justify-content: space-between !important;
+    gap: 200px;
+    padding:0 20px;
+    align-items: center;
+  }
+  .name{
+    color: white;
+    font-style: italic;
+  }
+  .toggle{
+position: absolute;
+right: 10px;
+.navicon{
+    color: white;
+    font-size: 30px;
+    z-index: 1;
+    cursor: pointer;
+}
+}
+.active{
+  color:  #f9966f;
+  border-right: 6px solid    white;
+}
